@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: make
-      run: sudo chmod 777 install_criterion.sh
+      run: chmod 777 install_criterion.sh
     - name: make check
       run: ./install_criterion.sh
     - name: make distcheck
