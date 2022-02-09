@@ -1,0 +1,21 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: make
+      run: sudo chmod 777 install_criterion.sh
+    - name: make check
+      run: ./install_criterion.sh
+    - name: make distcheck
+      run: make build_test
