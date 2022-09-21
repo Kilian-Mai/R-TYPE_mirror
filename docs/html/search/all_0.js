@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['workshop_5fgit_5factions_0',['workshop_git_actions',['../md_README.html',1,'']]]
+  ['addcomponent_0',['AddComponent',['../classComponentManager.html#a0808a4d4906466770e38f391a657548e',1,'ComponentManager']]]
 ];
