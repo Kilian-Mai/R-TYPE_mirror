@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Github Actions: workshop_git_actions</title>
+<title>Github Actions: R-Type</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,10 +63,36 @@ $(function() {
 </div><!-- top -->
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">workshop_git_actions </div>  </div>
+<div class="title">R-Type </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"></div></div><!-- contents -->
+<div class="textblock"><p>This project is a multithreaded server and a graphical client for the game R-Type, using an engine of our own design.</p>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Dependencies</h1>
+<p>These dependencies can be installed either through vcpkg (see setup instructions later in this README) or through your local package manager:</p>
+<ul>
+<li>SFML</li>
+<li>Loguru</li>
+</ul>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Installing vcpkg</h2>
+<p>vcpkg is a submodule of this repository. If you wish to use vcpkg and did not clone this repository with <code>--recurse-submodules</code>, please run <code>git submodule update --init</code> before continuing.</p>
+<h1><a class="anchor" id="autotoc_md6"></a>
+Building</h1>
+<p>This project uses CMake, allowing it to be built with a large range of compilers.</p>
+<p>Generating files for your build system is as simple as executing the following command, from the top directory of this repository:</p>
+<div class="fragment"><div class="line">cmake -B build</div>
+</div><!-- fragment --><p>without vcpkg, and</p>
+<div class="fragment"><div class="line">cmake -B build &quot;-DCMAKE_TOOLCHAIN_FILE=./vcpkg/scripts/buildsystems/vcpkg.cmake&quot;</div>
+</div><!-- fragment --><p>if you are using vcpkg (this will automatically install all necessary dependencies).</p>
+<p>You can then compile the project with this command (again, from the top directory of this repository):</p>
+<div class="fragment"><div class="line">cmake --build build</div>
+</div><!-- fragment --><p>Once built, the <code>r-type_server</code> and <code>r-type_client</code> executables can be found in the <code>build</code> folder.</p>
+<h1><a class="anchor" id="autotoc_md7"></a>
+Other resources</h1>
+<p><a class="el" href="md_CONTRIBUTING.html">This page contains general recommendations to anyone who wants to contribute to this project</a></p>
+<p>Programmer documentation (i.e. information for people who want to dive into the project's code) is here </p>
+</div></div><!-- contents -->
 </div><!-- PageDoc -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
