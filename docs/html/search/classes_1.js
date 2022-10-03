@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['entitymanager_24',['EntityManager',['../classEntityManager.html',1,'']]]
+  ['component_33',['Component',['../classComponent.html',1,'']]],
+  ['componentmanager_34',['ComponentManager',['../classComponentManager.html',1,'']]],
+  ['coordinator_35',['Coordinator',['../classCoordinator.html',1,'']]]
 ];

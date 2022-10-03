@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['workshop_5fgit_5factions_42',['workshop_git_actions',['../md_README.html',1,'']]]
+  ['contributing_20to_20this_20project_63',['Contributing to this project',['../md_CONTRIBUTING.html',1,'']]]
 ];
